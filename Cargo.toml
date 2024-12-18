@@ -3,7 +3,7 @@
 members = [
     "lib",
     "macro",
-    "macro_test"
+    "example"
 ]
 resolver = "2"
 

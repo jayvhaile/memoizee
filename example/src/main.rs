@@ -1,4 +1,4 @@
-use memoize::memoize;
+use memoizee::memoize;
 
 #[memoize]
 fn compute_sync(x: u32) -> u32 {
