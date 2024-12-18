@@ -10,11 +10,12 @@
 
 ## Installation
 
-Add `memoizee` to your `Cargo.toml`:
+Add `memoizee` and `once_cell` to your `Cargo.toml`:
 
 ```toml
 [dependencies]
 memoizee = "0.1.0"
+once_cell = "1.20.2"
 ```
 
 ## Usage
