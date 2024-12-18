@@ -65,7 +65,7 @@ pub fn memoize(_args: TokenStream, input: TokenStream) -> TokenStream {
 
     let gen_memoizer = if is_async {
         quote! {
-            once_cell::sync::Lazy::new(|| {
+             memoizee::Lazy::new(|| {
                 #memoizer_type::new(move |key: #arg_type| {
                     Box::pin(async move {
                         let #arg_ident = key;
@@ -76,7 +76,7 @@ pub fn memoize(_args: TokenStream, input: TokenStream) -> TokenStream {
         }
     } else {
         quote! {
-            once_cell::sync::Lazy::new(|| {
+             memoizee::Lazy::new(|| {
                 #memoizer_type::new(move |key: #arg_type| {
                     let #arg_ident = key;
                     #block
@@ -96,12 +96,14 @@ pub fn memoize(_args: TokenStream, input: TokenStream) -> TokenStream {
     };
 
     let expanded = quote! {
-        static #memoizer_name: ::once_cell::sync::Lazy<#memoizer_type> = #gen_memoizer;
+        static #memoizer_name:  memoizee::Lazy<#memoizer_type> = #gen_memoizer;
 
         #vis #sig {
             #call_memoizer
         }
     };
+
+    println!("GENERATED\n{}", expanded);
 
     expanded.into()
 }
