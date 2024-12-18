@@ -1,0 +1,14 @@
+
+[workspace]
+members = [
+    "lib",
+    "macro",
+    "macro_test"
+]
+resolver = "2"
+
+
+[build]
+rustflags = "-C target-cpu=nativffe"
+
+
