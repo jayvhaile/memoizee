@@ -1,6 +1,7 @@
 use dashmap::DashMap;
 use std::{future::Future, pin::Pin, sync::Arc};
 pub use memoizee_macro::memoize;
+pub use once_cell::sync::Lazy;
 
 #[derive(Clone)]
 pub struct AsyncMemoizer<K, V>
