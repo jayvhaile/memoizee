@@ -3,6 +3,9 @@ name = "memoizee-macro"
 version = "0.1.0"
 edition = "2024"
 
+description = "A proc macro for simplifying usage of memoizee"
+license = "MIT"
+
 [dependencies]
 quote = "1.0.37"
 syn = { version = "2.0.90",features = ["full"]}
