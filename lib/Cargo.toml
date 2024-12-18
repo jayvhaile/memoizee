@@ -2,8 +2,13 @@
 name = "memoizee"
 version = "0.1.0"
 edition = "2024"
+
+description = "Memoization for both sync and async function, with simple #[memoize] macro!"
+license = "MIT"
+
+
 [dependencies]
 dashmap = "6.1.0"
 futures = "0.3.31"
 tokio = { version = "1.42.0", features = ["full"] }
-memoizee-macro = { path = "../macro" }
+memoizee-macro = "0.1.0"

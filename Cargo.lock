@@ -214,13 +214,23 @@ version = "0.1.0"
 dependencies = [
  "dashmap",
  "futures",
- "memoizee-macro",
+ "memoizee-macro 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "tokio",
 ]
 
 [[package]]
 name = "memoizee-macro"
 version = "0.1.0"
+dependencies = [
+ "quote",
+ "syn",
+]
+
+[[package]]
+name = "memoizee-macro"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "535bb809ef44d62f557671e684e396715a1458a36328af74e1f4565b53c3c207"
 dependencies = [
  "quote",
  "syn",
