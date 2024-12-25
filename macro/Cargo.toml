@@ -1,7 +1,7 @@
 [package]
 name = "memoizee-macro"
-version = "0.2.0"
-edition = "2024"
+version = "0.3.0"
+edition = "2021"
 
 description = "A proc macro for simplifying usage of memoizee"
 license = "MIT"

@@ -123,7 +123,7 @@ name = "memoizee"
 version = "0.2.0"
 dependencies = [
  "dashmap",
- "memoizee-macro 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "memoizee-macro 0.2.0",
  "once_cell",
  "tokio",
 ]
@@ -135,7 +135,7 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "192e8094c7e7a2b8ee1cb306eab78ec35abaf705148bbbc0eda4c5c83e61bdc4"
 dependencies = [
  "dashmap",
- "memoizee-macro 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "memoizee-macro 0.2.0",
  "once_cell",
  "tokio",
 ]
@@ -143,6 +143,8 @@ dependencies = [
 [[package]]
 name = "memoizee-macro"
 version = "0.2.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "c31b183b026f82acf20fc27e07adfcd728ad60af748e3e68db0fe2cb41192708"
 dependencies = [
  "quote",
  "syn",
@@ -150,9 +152,7 @@ dependencies = [
 
 [[package]]
 name = "memoizee-macro"
-version = "0.2.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c31b183b026f82acf20fc27e07adfcd728ad60af748e3e68db0fe2cb41192708"
+version = "0.3.0"
 dependencies = [
  "quote",
  "syn",

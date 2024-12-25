@@ -103,7 +103,7 @@ pub fn memoize(_args: TokenStream, input: TokenStream) -> TokenStream {
         }
     };
 
-    println!("GENERATED\n{}", expanded);
+    println!("GENERATED\n{expanded}");
 
     expanded.into()
 }
